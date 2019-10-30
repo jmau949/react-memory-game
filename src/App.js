@@ -61,6 +61,7 @@ class App extends Component {
       <div className='App'>
         <Navbar />
         <h1>Monster Guess</h1>
+        <h4>Click a monster only once to win</h4>
         <h4>Score: {this.state.score} Highscore: {this.state.highscore}</h4>
         <Message message={this.state.message}/>
         <CardList monsters={this.state.monsters} click={this.handleClick}/>
